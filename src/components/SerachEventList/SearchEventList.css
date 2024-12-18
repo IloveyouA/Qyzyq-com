@@ -1,0 +1,52 @@
+:root {
+  --website-bg-color: #F4F4F4; /* Main background */
+  --card-bg-color: #FFF; /* Card background */
+  --primary-gradient: linear-gradient(45deg, #F7546E, #FF7E5F); /* Primary gradient */
+  --secondary-color: #32CD32; /* Accent color */
+  --text-primary: #333; /* Primary text color */
+  --text-secondary: #696969; /* Secondary text color */
+  --table-header-bg: #DCDCDC; /* Table header background */
+  --table-hover-bg: #E6E6E6; /* Row hover effect */
+  --shadow-color: rgba(0, 0, 0, 0.1); /* Box shadow */
+  --event-card-bg: #F0F8FF; /* Event card background */
+  --event-card-border: #A9A9A9; /* Event card border */
+  --event-card-text: #00008B; /* Text on event card */
+}
+
+.event-search {
+    margin-top: 60px;
+    background-color: var(--website-bg-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+.event-card {
+    background-color: var(--event-card-bg);
+    border: 1px solid var(--event-card-border);
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px var(--shadow-color);
+    transition: all 0.3s ease;
+}
+
+.event-card:hover {
+    background-color: #E0FFFF; /* Slight hover effect */
+    transform: scale(1.02);
+}
+
+.event-card h3 {
+    font-size: 1.2em;
+    color: var(--event-card-text);
+}
+
+.event-card p {
+    font-size: 1em;
+    color: var(--text-secondary);
+}
+
+.event-card img {
+    width: 100%;
+    border-radius: 8px;
+}
